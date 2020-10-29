@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pymulticube.camera.Camera</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;pymulticube ::
+        <a href="pymulticube.camera-module.html">Module&nbsp;camera</a> ::
+        Class&nbsp;Camera
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="pymulticube.camera.Camera-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class Camera</h1><p class="nomargin-top"><span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera">source&nbsp;code</a></span></p>
+<p>Camera:  A camera class that processes input and calculates the 
+  corresponding Euler Angles, Vectors and Matrices for moving the camera 
+  about a 3-dimensional landscape. For use in OpenGL.  This class relies 
+  heavily on GLM the OpenGL Math Library.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pymulticube.camera.Camera-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">width</span>,
+        <span class="summary-sig-arg">height</span>,
+        <span class="summary-sig-arg">position</span>=<span class="summary-sig-default">vec3(0.0,0.0,2.0)</span>,
+        <span class="summary-sig-arg">focus</span>=<span class="summary-sig-default">vec3(0.0,0.0,0.0)</span>)</span><br />
+      Constructor with vectors to define viewer position and focus.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pymulticube.camera.Camera-class.html#setCamera" class="summary-sig-name">setCamera</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">width</span>,
+        <span class="summary-sig-arg">height</span>,
+        <span class="summary-sig-arg">posX</span>,
+        <span class="summary-sig-arg">posY</span>,
+        <span class="summary-sig-arg">posZ</span>,
+        <span class="summary-sig-arg">upX</span>,
+        <span class="summary-sig-arg">upY</span>,
+        <span class="summary-sig-arg">upZ</span>,
+        <span class="summary-sig-arg">yaw</span>,
+        <span class="summary-sig-arg">pitch</span>)</span><br />
+      Set the camera values to define viewer postion and Euler angles for 
+      direction.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.setCamera">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setGluViewMatrix"></a><span class="summary-sig-name">setGluViewMatrix</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Sets the LookAt Matrix using GLU.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.setGluViewMatrix">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setGluPerspective"></a><span class="summary-sig-name">setGluPerspective</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Sets the current perspective matrix using GLU.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.setGluPerspective">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getViewMatrix"></a><span class="summary-sig-name">getViewMatrix</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the LookAt Matrix using GLM.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.getViewMatrix">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getPerspective"></a><span class="summary-sig-name">getPerspective</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the current perspective matrix using GLM.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.getPerspective">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getPitchYaw"></a><span class="summary-sig-name">getPitchYaw</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return the pitch and yaw as a tuple.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.getPitchYaw">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="resizeView"></a><span class="summary-sig-name">resizeView</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">width</span>,
+        <span class="summary-sig-arg">height</span>)</span><br />
+      Allows the viewport to be resized.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.resizeView">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="resetCamera"></a><span class="summary-sig-name">resetCamera</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return the camera to its original settings.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.resetCamera">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getPosition"></a><span class="summary-sig-name">getPosition</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the camera position.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.getPosition">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setPosition"></a><span class="summary-sig-name">setPosition</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">position</span>)</span><br />
+      Set the camera position.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.setPosition">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="reverseDirection"></a><span class="summary-sig-name">reverseDirection</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Rotate the camera 180 degrees on the XZ plane.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.reverseDirection">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pymulticube.camera.Camera-class.html#processKeyboard" class="summary-sig-name">processKeyboard</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">direction</span>,
+        <span class="summary-sig-arg">deltaTime</span>)</span><br />
+      Processes input received from any keyboard-like input system.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.processKeyboard">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pymulticube.camera.Camera-class.html#processMouseMovement" class="summary-sig-name">processMouseMovement</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">xoffset</span>,
+        <span class="summary-sig-arg">yoffset</span>)</span><br />
+      Processes input received from a mouse input system.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.processMouseMovement">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pymulticube.camera.Camera-class.html#processMouseScroll" class="summary-sig-name">processMouseScroll</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">inout</span>)</span><br />
+      Process input received from a mouse scroll-wheel event.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.processMouseScroll">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getEulerAngles"></a><span class="summary-sig-name">getEulerAngles</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Calculates the Euler angles from the front vector.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.getEulerAngles">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getFront"></a><span class="summary-sig-name">getFront</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Calculate the front vector from the Euler angles.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.getFront">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="mat4tonumpy"></a><span class="summary-sig-name">mat4tonumpy</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">value</span>)</span><br />
+      Convert a GLM mat4 to a numpy float array.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.mat4tonumpy">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="printMat4"></a><span class="summary-sig-name">printMat4</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">printMat</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.printMat4">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="crossProduct"></a><span class="summary-sig-name">crossProduct</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.crossProduct">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pymulticube.camera.Camera-class.html#Camera_Movement" class="summary-name">Camera_Movement</a> = <code title="[&quot;FORWARD&quot;, &quot;BACKWARD&quot;, &quot;LEFT&quot;, &quot;RIGHT&quot;, &quot;CLOSER&quot;, &quot;AWAY&quot;, &quot;UP&quot;, &quot;DOWN\
+&quot;]">[&quot;FORWARD&quot;, &quot;BACKWARD&quot;, &quot;LEFT&quot;, &quot;RIGHT&quot;, &quot;CL<code class="variable-ellipsis">...</code></code><br />
+      Constants The Default camera values.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="YAW"></a><span class="summary-name">YAW</span> = <code title="-90.0">-90.0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="PITCH"></a><span class="summary-name">PITCH</span> = <code title="0.0">0.0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SPEED"></a><span class="summary-name">SPEED</span> = <code title="0.1">0.1</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SENSITIVITY"></a><span class="summary-name">SENSITIVITY</span> = <code title="1.0">1.0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="ZOOM"></a><span class="summary-name">ZOOM</span> = <code title="45.0">45.0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="WORLDUP"></a><span class="summary-name">WORLDUP</span> = <code title="vec3(0.0, 1.0, 0.0)">vec3(0.0, 1.0, 0.0)</code><br />
+      Variables Camera Attributes
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="Position"></a><span class="summary-name">Position</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="Front"></a><span class="summary-name">Front</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="Up"></a><span class="summary-name">Up</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="Focus"></a><span class="summary-name">Focus</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="Right"></a><span class="summary-name">Right</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="WorldUp"></a><span class="summary-name">WorldUp</span> = <code title="None">None</code><br />
+      Persistent camera attributes.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="position"></a><span class="summary-name">position</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="focus"></a><span class="summary-name">focus</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="front"></a><span class="summary-name">front</span> = <code title="None">None</code><br />
+      Euler Angles: Large is current and small is persistent.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="Yaw"></a><span class="summary-name">Yaw</span> = <code title="0.">0.</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="yaw"></a><span class="summary-name">yaw</span> = <code title="0.">0.</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="Pitch"></a><span class="summary-name">Pitch</span> = <code title="0.">0.</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="pitch"></a><span class="summary-name">pitch</span> = <code title="0.">0.</code><br />
+      Camera options Adjust this to account for timing of the keyboard.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MovementSpeed"></a><span class="summary-name">MovementSpeed</span> = <code title="0.">0.</code><br />
+      Adjust this to account for the mouse movement.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MouseSensitivity"></a><span class="summary-name">MouseSensitivity</span> = <code title="0.">0.</code><br />
+      Zoom for a more detailed view of an object.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="Zoom"></a><span class="summary-name">Zoom</span> = <code title="0.">0.</code><br />
+      Viewport dimensions.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="Width"></a><span class="summary-name">Width</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="Height"></a><span class="summary-name">Height</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="width"></a><span class="summary-name">width</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="height"></a><span class="summary-name">height</span> = <code title="0">0</code><br />
+      Perspective matrix.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pymulticube.camera.Camera-class.html#projection" class="summary-name">projection</a> = <code title="identity(mat4)">identity(mat4)</code><br />
+      The debug flag.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="debug1"></a><span class="summary-name">debug1</span> = <code title="False">False</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">width</span>,
+        <span class="sig-arg">height</span>,
+        <span class="sig-arg">position</span>=<span class="sig-default">vec3(0.0,0.0,2.0)</span>,
+        <span class="sig-arg">focus</span>=<span class="sig-default">vec3(0.0,0.0,0.0)</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Constructor with vectors to define viewer position and focus. width : 
+  the width of the viewport. height : the height of the viewport. position 
+  : the position of the camera. focus :  the position of the object looked 
+  at.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="setCamera"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setCamera</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">width</span>,
+        <span class="sig-arg">height</span>,
+        <span class="sig-arg">posX</span>,
+        <span class="sig-arg">posY</span>,
+        <span class="sig-arg">posZ</span>,
+        <span class="sig-arg">upX</span>,
+        <span class="sig-arg">upY</span>,
+        <span class="sig-arg">upZ</span>,
+        <span class="sig-arg">yaw</span>,
+        <span class="sig-arg">pitch</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.setCamera">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the camera values to define viewer postion and Euler angles for 
+  direction. width : the width of the viewport. height : the height of the 
+  viewport. posX, posY, posZ : the (x, y, z) position of the camera. upX, 
+  upY, upZ : the (x, y, z) up direction of camera up. yaw : yaw based on (x
+  &gt; 0, 0, 0) as zero radians (right &lt;-&gt; left). pitch : pitch based
+  on (x, 0, z) as zero radians (up &lt;-&gt; down).</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="processKeyboard"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">processKeyboard</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">direction</span>,
+        <span class="sig-arg">deltaTime</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.processKeyboard">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Processes input received from any keyboard-like input system. Accepts 
+  input parameter in the form of camera defined index, such as 
+  Camera.Camera_Movement.index(&quot;RIGHT&quot;) or 
+  Camera.Camera_Movement.index(&quot;UP&quot;)  (to abstract it from 
+  windowing systems). This is adjustable using the SPEED variable.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="processMouseMovement"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">processMouseMovement</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">xoffset</span>,
+        <span class="sig-arg">yoffset</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.processMouseMovement">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Processes input received from a mouse input system. It expects the 
+  offset value in both the x and y direction. This is adjustable using the 
+  SENSITIVITY variable.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="processMouseScroll"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">processMouseScroll</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">inout</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pymulticube.camera-pysrc.html#Camera.processMouseScroll">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Process input received from a mouse scroll-wheel event. This method 
+  only requires input on the wheel-axis</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== CLASS VARIABLE DETAILS ==================== -->
+<a name="section-ClassVariableDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variable Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariableDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="Camera_Movement"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">Camera_Movement</h3>
+  <p>Constants The Default camera values.</p>
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+[&quot;FORWARD&quot;, &quot;BACKWARD&quot;, &quot;LEFT&quot;, &quot;RIGHT&quot;, &quot;CLOSER&quot;, &quot;AWAY&quot;, &quot;UP&quot;, &quot;DOWN<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+&quot;]
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="projection"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">projection</h3>
+  <p>The debug flag. Setting this to True will give debug data on the 
+  console.</p>
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+identity(mat4)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1
+    on Mon Jun  1 19:29:22 2020
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

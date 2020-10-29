@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pymulticube.createimage.CreateImage</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;pymulticube ::
+        <a href="pymulticube.createimage-module.html">Module&nbsp;createimage</a> ::
+        Class&nbsp;CreateImage
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="pymulticube.createimage.CreateImage-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class CreateImage</h1><p class="nomargin-top"><span class="codelink"><a href="pymulticube.createimage-pysrc.html#CreateImage">source&nbsp;code</a></span></p>
+<p>CreateImage : Using PIL the Python Imaging Library, this class loads 
+  an image into memory, converts it to a 32 bit format with alpha, and then
+  passes it to a numpy byte array, then the image is be turned into an 
+  OpenGL buffer object. It provides for a single image, a double image, a 
+  vector of images, or a sky box containing six images.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__init__"></a><span class="summary-sig-name">__init__</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Initialization flags the creation of the class.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.createimage-pysrc.html#CreateImage.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pymulticube.createimage.CreateImage-class.html#doubleImage" class="summary-sig-name">doubleImage</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">imagearray</span>,
+        <span class="summary-sig-arg">startindex</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Create a series of double images using a passed list of filenames.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.createimage-pysrc.html#CreateImage.doubleImage">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getWidth"></a><span class="summary-sig-name">getWidth</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Image width in pixels.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.createimage-pysrc.html#CreateImage.getWidth">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getHeight"></a><span class="summary-sig-name">getHeight</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Image height in pixels.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.createimage-pysrc.html#CreateImage.getHeight">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getSize"></a><span class="summary-sig-name">getSize</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      The overall size of the image in bytes.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.createimage-pysrc.html#CreateImage.getSize">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="textureObject"></a><span class="summary-sig-name">textureObject</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">imagefile</span>,
+        <span class="summary-sig-arg">index</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Provide a filename and an OpenGL buffer handle, and receive an OpenGL
+      buffer object tied to that handle.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.createimage-pysrc.html#CreateImage.textureObject">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pymulticube.createimage.CreateImage-class.html#createSkyBoxTex" class="summary-sig-name">createSkyBoxTex</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">filenames</span>,
+        <span class="summary-sig-arg">index</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Provide a list of six filenames and a buffer handle number and return
+      an OpenGL sky box object tied to that number.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.createimage-pysrc.html#CreateImage.createSkyBoxTex">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="create2DTexArray"></a><span class="summary-sig-name">create2DTexArray</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">filenames</span>,
+        <span class="summary-sig-arg">index</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Create an array of images for an OpenGL Texture2DArray object using a
+      provided file name list and a buffer handle.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.createimage-pysrc.html#CreateImage.create2DTexArray">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getData"></a><span class="summary-sig-name">getData</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">filename</span>)</span><br />
+      The PIL Image class loads standard picture and it is returned as a 
+      numpy byte array.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pymulticube.createimage-pysrc.html#CreateImage.getData">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="width"></a><span class="summary-name">width</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="height"></a><span class="summary-name">height</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="size"></a><span class="summary-name">size</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="pixels"></a><span class="summary-name">pixels</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="debug1"></a><span class="summary-name">debug1</span> = <code title="False">False</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="doubleImage"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">doubleImage</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">imagearray</span>,
+        <span class="sig-arg">startindex</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pymulticube.createimage-pysrc.html#CreateImage.doubleImage">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a series of double images using a passed list of filenames. The
+  first image (imagearray[0]) is used as the background for the rest of the
+  list.  The return value is a list of OpenGL buffer object handles for the
+  double images created.  The startindex value is the start of the 
+  numbering for the OpenGL buffer object handles.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="createSkyBoxTex"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">createSkyBoxTex</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">filenames</span>,
+        <span class="sig-arg">index</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pymulticube.createimage-pysrc.html#CreateImage.createSkyBoxTex">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Provide a list of six filenames and a buffer handle number and return 
+  an OpenGL sky box object tied to that number. Loads a cubemap texture 
+  from 6 individual texture faces. The order of the faces should be: +X 
+  (right) -X (left) +Y (top) -Y (bottom) +Z (front) -Z (back)</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1
+    on Mon Jun  1 19:29:22 2020
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

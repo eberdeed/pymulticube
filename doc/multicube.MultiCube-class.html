@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>multicube.MultiCube</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="multicube-module.html">Module&nbsp;multicube</a> ::
+        Class&nbsp;MultiCube
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="multicube.MultiCube-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class MultiCube</h1><p class="nomargin-top"><span class="codelink"><a href="multicube-pysrc.html#MultiCube">source&nbsp;code</a></span></p>
+<p>MultiCube:  A class to create random cubes in an OpenGL sky box.  It 
+  uses numpy arrays and GLM for the transformations. It will respond to 
+  keyboard and mouse inputs.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__init__"></a><span class="summary-sig-name">__init__</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Initialize the GLUT windowing system and start the sound using the 
+      SFML library.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="multicube-pysrc.html#MultiCube.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="initProg"></a><span class="summary-sig-name">initProg</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Initialize OpenGL create the cube and sky cube and initialize the 
+      positions and orientations for the cubes.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="multicube-pysrc.html#MultiCube.initProg">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="eventLoop"></a><span class="summary-sig-name">eventLoop</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      The display and animation of the cubes is handled here.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="multicube-pysrc.html#MultiCube.eventLoop">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="printCube"></a><span class="summary-sig-name">printCube</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">cube</span>)</span><br />
+      A debug method to print a cube.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="multicube-pysrc.html#MultiCube.printCube">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="keyDown"></a><span class="summary-sig-name">keyDown</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">key</span>,
+        <span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>)</span><br />
+      Handle keyboard inputs.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="multicube-pysrc.html#MultiCube.keyDown">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="funcKeyDown"></a><span class="summary-sig-name">funcKeyDown</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">key</span>,
+        <span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>)</span><br />
+      Handle non-ascii2 keys.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="multicube-pysrc.html#MultiCube.funcKeyDown">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="mouseMove"></a><span class="summary-sig-name">mouseMove</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>)</span><br />
+      Handle mouse motion.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="multicube-pysrc.html#MultiCube.mouseMove">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="framebufferSize"></a><span class="summary-sig-name">framebufferSize</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">width</span>,
+        <span class="summary-sig-arg">height</span>)</span><br />
+      Adjust the viewport due to window resizing.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="multicube-pysrc.html#MultiCube.framebufferSize">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="soundMaker"></a><span class="summary-sig-name">soundMaker</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">tinfo</span>=<span class="summary-sig-default">&quot;&quot;</span>)</span><br />
+      Create the background music.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="multicube-pysrc.html#MultiCube.soundMaker">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="permLoc"></a><span class="summary-sig-name">permLoc</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Calculate the locations and orientations.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="multicube-pysrc.html#MultiCube.permLoc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="calcRand"></a><span class="summary-sig-name">calcRand</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Random number for x,y,z values for cube location.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="multicube-pysrc.html#MultiCube.calcRand">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="debugPrint"></a><span class="summary-sig-name">debugPrint</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Print the cube location and orientation data.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="multicube-pysrc.html#MultiCube.debugPrint">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="Width"></a><span class="summary-name">Width</span> = <code title="800">800</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="Height"></a><span class="summary-name">Height</span> = <code title="600">600</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="width"></a><span class="summary-name">width</span> = <code title="800">800</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="height"></a><span class="summary-name">height</span> = <code title="600">600</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="cube"></a><span class="summary-name">cube</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="skyboxverts"></a><span class="summary-name">skyboxverts</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="clock"></a><span class="summary-name">clock</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="textureID1"></a><span class="summary-name">textureID1</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="textureID"></a><span class="summary-name">textureID</span> = <code title="list()">list()</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="skyboxID"></a><span class="summary-name">skyboxID</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="debug1"></a><span class="summary-name">debug1</span> = <code title="False">False</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="firstMouse"></a><span class="summary-name">firstMouse</span> = <code title="True">True</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="sndthrd"></a><span class="summary-name">sndthrd</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="fullScreen"></a><span class="summary-name">fullScreen</span> = <code title="True">True</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="modes"></a><span class="summary-name">modes</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="windowID"></a><span class="summary-name">windowID</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="image"></a><span class="summary-name">image</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="timestart"></a><span class="summary-name">timestart</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="timeend"></a><span class="summary-name">timeend</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="mousePos1"></a><span class="summary-name">mousePos1</span> = <code title="vec2()">vec2()</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="mousePos2"></a><span class="summary-name">mousePos2</span> = <code title="vec2()">vec2()</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="arraysize"></a><span class="summary-name">arraysize</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="distVals"></a><span class="summary-name">distVals</span> = <code title="list()">list()</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="soundFile"></a><span class="summary-name">soundFile</span> = <code title="&quot;/usr/share/openglresources/sounds/celticfive.wav&quot;">&quot;/usr/share/openglresources/sounds/celticfive.wav&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="multicube.MultiCube-class.html#boximages" class="summary-name">boximages</a> = <code title="[&quot;/usr/share/openglresources/images/planks.jpg&quot;, &quot;/usr/share/openglres\
+ources/images/abstract.png&quot;, &quot;/usr/share/openglresources/images/awesom\
+eface.png&quot;, &quot;/usr/share/openglresources/images/eucharist.png&quot;, &quot;/usr/s\
+hare/openglresources/images/grapes.png&quot;, &quot;/usr/share/openglresources/i\
+mages/lemon.png&quot;, &quot;/usr/share/openglresources/images/mexican.png&quot;, &quot;/u\
+sr/share/openglresources/images/palette.png&quot;, &quot;/usr/share/openglresour\
+ces/images/panda.png&quot;, &quot;/usr/share/openglresources/images/paris.png&quot;, \
+&quot;/usr/share/openglresources/images/seahorse.png&quot;, &quot;/usr/share/openglre\
+...">[&quot;/usr/share/openglresources/images/planks.jpg&quot;, &quot;<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="multicube.MultiCube-class.html#skyfiles" class="summary-name">skyfiles</a> = <code title="[&quot;/usr/share/openglresources/images/skybox/scene_right.tga&quot;, &quot;/usr/sha\
+re/openglresources/images/skybox/scene_left.tga&quot;, &quot;/usr/share/openglre\
+sources/images/skybox/scene_up.tga&quot;, &quot;/usr/share/openglresources/image\
+s/skybox/scene_down.tga&quot;, &quot;/usr/share/openglresources/images/skybox/sc\
+ene_front.tga&quot;, &quot;/usr/share/openglresources/images/skybox/scene_back.t\
+ga&quot;]">[&quot;/usr/share/openglresources/images/skybox/scene_ri<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLE DETAILS ==================== -->
+<a name="section-ClassVariableDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variable Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariableDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="boximages"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">boximages</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+[&quot;/usr/share/openglresources/images/planks.jpg&quot;, &quot;/usr/share/openglres<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+ources/images/abstract.png&quot;, &quot;/usr/share/openglresources/images/awesom<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+eface.png&quot;, &quot;/usr/share/openglresources/images/eucharist.png&quot;, &quot;/usr/s<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+hare/openglresources/images/grapes.png&quot;, &quot;/usr/share/openglresources/i<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+mages/lemon.png&quot;, &quot;/usr/share/openglresources/images/mexican.png&quot;, &quot;/u<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+sr/share/openglresources/images/palette.png&quot;, &quot;/usr/share/openglresour<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+ces/images/panda.png&quot;, &quot;/usr/share/openglresources/images/paris.png&quot;, <span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+&quot;/usr/share/openglresources/images/seahorse.png&quot;, &quot;/usr/share/openglre<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+<code class="variable-ellipsis">...</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="skyfiles"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">skyfiles</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+[&quot;/usr/share/openglresources/images/skybox/scene_right.tga&quot;, &quot;/usr/sha<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+re/openglresources/images/skybox/scene_left.tga&quot;, &quot;/usr/share/openglre<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+sources/images/skybox/scene_up.tga&quot;, &quot;/usr/share/openglresources/image<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+s/skybox/scene_down.tga&quot;, &quot;/usr/share/openglresources/images/skybox/sc<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+ene_front.tga&quot;, &quot;/usr/share/openglresources/images/skybox/scene_back.t<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+ga&quot;]
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1
+    on Mon Jun  1 19:29:22 2020
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
